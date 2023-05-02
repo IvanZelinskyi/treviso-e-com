@@ -16,8 +16,9 @@ import PageError from "./components/PageError";
 import OrderInvoice from "./components/OrderInvoice";
 import MyProfile from "./views/MyProfile";
 import Stripe from "./components/Stripe";
-import { AnimatePresence } from "framer-motion";
+import Welcome from "./components/Welcome";
 import BrandList from "./views/BrandList";
+import { AnimatePresence } from "framer-motion";
 import * as jose from "jose";
 import {
   categories as categoriesAtom,
@@ -28,6 +29,7 @@ import {
 import axios from "axios";
 import { URL } from "./config";
 function App() {
+  const [initialMessage, setInitialMessage] = useState(true);
   const [products, setProducts] = useRecoilState(productsAtom);
   const [users, setUsers] = useRecoilState(usersAtom);
   const [categories, setCategories] = useRecoilState(categoriesAtom);
@@ -185,8 +187,12 @@ function App() {
     getUsers();
     getProducts();
   }, []);
+
   return (
     <Router>
+      <AnimatePresence>
+        {initialMessage && <Welcome setInitialMessage={setInitialMessage} />}
+      </AnimatePresence>
       {cartNotification.display && <CartNotification data={cartNotification} />}
       {modal.display && (
         <LoginModal
