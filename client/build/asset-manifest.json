@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c97141b2.css",
+    "main.js": "/static/js/main.24184209.js",
+    "static/media/video.mp4": "/static/media/video.20bfa5247c8b5d3eb0d5.mp4",
+    "static/media/dropdown-accessories.jpg": "/static/media/dropdown-accessories.063b90882eefd587e44b.jpg",
+    "static/media/dropdown-jewelry.jpg": "/static/media/dropdown-jewelry.fb34a60ea2e5f9ed7a9a.jpg",
+    "static/media/focus-prada.jpg": "/static/media/focus-prada.7bc917df8f6248fe9af7.jpg",
+    "static/media/dropdown-clothing.jpg": "/static/media/dropdown-clothing.02e087d380caa3ffe906.jpg",
+    "static/media/dropdown-bags.jpg": "/static/media/dropdown-bags.1ac262bdedc3ebce4390.jpg",
+    "static/media/sunglasses-trends.jpg": "/static/media/sunglasses-trends.e59cc33c6c3412b6e14b.jpg",
+    "static/media/splashImg.jpg": "/static/media/splashImg.4f01fa0b0c191e333bba.jpg",
+    "static/media/catalogue-shoes.jpg": "/static/media/catalogue-shoes.3879072e38b36fb25864.jpg",
+    "index.html": "/index.html",
+    "main.c97141b2.css.map": "/static/css/main.c97141b2.css.map",
+    "main.24184209.js.map": "/static/js/main.24184209.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c97141b2.css",
+    "static/js/main.24184209.js"
+  ]
+}
