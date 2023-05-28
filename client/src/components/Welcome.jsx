@@ -9,6 +9,9 @@ const Welcome = ({ setInitialMessage }) => {
       duration={0.5}
     >
       <h1>Welcome to Treviso!</h1>
+      <h2 style={{ textDecoration: "underline" }}>
+        It could take some time to load the data
+      </h2>
       <h2>
         In order to complete the purchase
         <br /> use the following card number:
