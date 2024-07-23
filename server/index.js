@@ -15,10 +15,9 @@ let port = process.env.PORT;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
-// mongoose.set('debug', true)
+// mongoose.set("debug", true);
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, "../client/build")));
-
 async function connecting() {
   try {
     await mongoose.connect(process.env.MONGO_URL, {
@@ -30,6 +29,7 @@ async function connecting() {
     console.log(
       "ERROR: Seems like your DB is not running, please start it up !!!"
     );
+    console.log(error);
   }
 }
 connecting();
